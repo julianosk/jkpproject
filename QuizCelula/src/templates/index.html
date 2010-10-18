@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Questionario de uso do Célula
+{% endblock %}
+
+{% block contents %}
+<h2>Questionario de uso do Célula</h2>
+{% for poll in polls %}
+<div class="poll">
+<a href="{{poll.get_absolute_url}}">{{poll.question}}</a>
+<br>
+Created on {{poll.created_on|date}}
+</div>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<title>{% block title %} Page title {% endblock %}</title>
+
+<style type="text/css">
+<!--
+.contents {
+	width: 70%;
+	float: right;
+}
+
+.sidebar {
+	width: 25%;
+	float: right;
+}
+-->
+</style>
+
+</head>
+<body>
+<div align="center">
+<div class="contents">
+{% block contents %} 
+asdf 
+{% endblock %}
+</div>
+
+<div class="sidebar">
+{% block sidebar %}
+
+<h3>Menu</h3>
+<ul>
+	<li><a href="/results/">Checar Resultados</a></li>
+	<li><a href="/quests/">Inserir Questões</a></li>
+</ul>
+
+{% endblock %}
+</div>
+
+</div>
+</body>
+</html>
