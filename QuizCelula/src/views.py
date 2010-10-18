@@ -22,7 +22,7 @@ def quests(request):
 
 def create(request):
     if request.method == 'GET':
-        pollform = bforms.PollForm()
+        quizform = forms.QuestionForm()
         choiceforms = []
         for i in range(4):
             choiceforms.append(bforms.ChoiceForm(prefix = 'f%s'%i))
